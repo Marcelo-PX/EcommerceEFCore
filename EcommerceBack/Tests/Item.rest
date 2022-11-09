@@ -1,0 +1,13 @@
+### Cadastrar um novo item venda
+POST https://localhost:5001/api/item/cadastrar
+Content-Type: application/json
+
+{
+    "ProdutoId" : 4,
+    "Quantidade" : 2,
+    "Preco" : 3.5,
+    "CarrinhoId" : ""
+}
+
+### Listar todas as categorias
+GET https://localhost:5001/api/item/buscar/4

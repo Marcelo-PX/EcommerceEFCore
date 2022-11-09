@@ -43,7 +43,7 @@ namespace EcommerceBack
             //Configurar todas as injeções de dependência do seu projeto
             services.AddDbContext<DataContext>
             (
-                options => options.UseSqlite("DataSource=folhas.db;Cache=shared")
+                options => options.UseSqlite("DataSource=arquivo.db;Cache=shared")
             );
 
             services.AddControllers();

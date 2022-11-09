@@ -1,0 +1,10 @@
+### cadastrar categoria
+POST https://localhost:5001/api/categoria/cadastrar
+Content-Type: application/json
+
+{
+    "Nome": "Brinquedo"
+}
+
+### Listar categorias
+GET https://localhost:5001/api/categoria/listar
