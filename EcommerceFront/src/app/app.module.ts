@@ -2,17 +2,21 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from "@angular/common/http";
+import { FormsModule } from "@angular/forms";
 import { AppComponent } from './app.component';
-import { CadastrarClienteComponent } from './components/pages/cadastrar-cliente/cadastrar-cliente.component';
+import { CadastrarCategoriaComponent } from './components/pages/categoria/cadastrar-categoria/cadastrar-categoria.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CadastrarClienteComponent
+    CadastrarCategoriaComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

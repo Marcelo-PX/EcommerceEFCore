@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CadastrarClienteComponent } from './components/pages/cadastrar-cliente/cadastrar-cliente.component';
+import { CadastrarCategoriaComponent } from './components/pages/categoria/cadastrar-categoria/cadastrar-categoria.component';
+
 
 const routes: Routes = [
   {
-    path : "pages/cliente/cadastrar",
-    component: CadastrarClienteComponent
+    path : "pages/categoria/cadastrar",
+    component: CadastrarCategoriaComponent
   }
 
 ];
