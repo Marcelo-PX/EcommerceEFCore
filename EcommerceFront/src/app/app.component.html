@@ -1,3 +1,34 @@
-<a routerLink="/pages/categoria/cadastrar">Cadastrar Categoria</a>
-
-<router-outlet></router-outlet>
+<mat-toolbar color="warn">
+  <button mat-icon-button (click)="sidenav.toggle()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>Ecommerce</span>
+</mat-toolbar>
+<mat-sidenav-container class="container">
+  <mat-sidenav #sidenav mode="side">
+    <mat-nav-list>
+      <a mat-list-item routerLink="/categoria/cadastrar">
+        <mat-icon mat-list-icon>add</mat-icon>
+        Cadastrar Produto
+      </a>
+    <a mat-list-item routerLink="/produto/listar">
+        <mat-icon mat-list-icon>list</mat-icon>
+        Listar Produtos
+      </a>
+    <a mat-list-item routerLink="/home/carrinho">
+        <mat-icon mat-list-icon>shopping_cart</mat-icon>
+        Minha Compra
+      </a>
+    <a mat-list-item routerLink="/venda/listar">
+        <mat-icon mat-list-icon>shopping_cart</mat-icon>
+        Historico de compras
+      </a>
+    </mat-nav-list>
+    <!-- Links -->
+  </mat-sidenav>
+  <mat-sidenav-content class="content">
+    <!-- Conteúdo -->
+    <!-- É aqui que os componentes vão entrar -->
+    <router-outlet> </router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

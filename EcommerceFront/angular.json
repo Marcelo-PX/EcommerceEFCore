@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "EcommerceFront": {
+    "FRONT_Copa": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -40,7 +40,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ecommerce-front",
+            "outputPath": "dist/front-copa",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -50,6 +50,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -91,10 +92,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "EcommerceFront:build:production"
+              "browserTarget": "FRONT_Copa:build:production"
             },
             "development": {
-              "browserTarget": "EcommerceFront:build:development"
+              "browserTarget": "FRONT_Copa:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -102,13 +103,13 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "EcommerceFront:build"
+            "browserTarget": "FRONT_Copa:build"
           }
         }
       }
     }
   },
   "cli": {
-    "analytics": "46a5c666-a99f-4b20-9a6d-3475b2901c7b"
+    "analytics": false
   }
 }
