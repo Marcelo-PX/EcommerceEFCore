@@ -1,1 +1,24 @@
-<p>listar-produto works!</p>
+<mat-card class="container">
+    <mat-card-header>
+      <mat-card-title> Listar Produto </mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <table>
+        <tr>
+          <th>nome</th>
+          <th>Descrição</th>
+          <th>quantidade</th>
+          <th>valor</th>
+          <th>categoria</th>
+        </tr>
+        <tr *ngFor="let produto of produtos">
+          <td>{{produto.nome}}</td>
+          <td>{{produto.descricao}}</td>
+          <td>{{produto.quantidade}}</td>
+          <td>{{produto.valor}}</td>
+          <td>{{produto.categoria?.nome}}</td>
+        </tr>
+      </table>
+    </mat-card-content>
+  
+  </mat-card>
