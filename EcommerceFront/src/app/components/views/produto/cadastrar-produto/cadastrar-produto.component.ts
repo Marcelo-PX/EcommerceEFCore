@@ -30,6 +30,8 @@ export class CadastrarProdutoComponent implements OnInit {
       .subscribe({
         next: (categorias) => {
           this.categorias = categorias;
+
+          console.log(this.categorias)
         }
       });
   }
@@ -42,6 +44,7 @@ export class CadastrarProdutoComponent implements OnInit {
       descricao: this.descricao,
       categoriaId: this.categoriaId,
     };
+    console.log(produto)
 
     this.http.post<Produto>("https://localhost:5001/api/produto/cadastrar", produto)
       .subscribe({
