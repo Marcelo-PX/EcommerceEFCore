@@ -1,0 +1,18 @@
+<mat-card class="container">
+    <mat-card-header>
+      <mat-card-title> Listar formas de pagamentos </mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <table>
+        <tr>
+          <th>nome</th>
+          <th>Parcelas</th>
+        </tr>
+        <tr *ngFor="let formaPagamento of formaPagamentos">
+          <td>{{formaPagamento.nome}}</td>
+          <td>{{formaPagamento.parcelas}}</td>
+        </tr>
+      </table>
+    </mat-card-content>
+  
+  </mat-card>

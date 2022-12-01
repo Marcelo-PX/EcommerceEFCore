@@ -21,6 +21,7 @@ import { CadastrarProdutoComponent } from './components/views/produto/cadastrar-
 import { ListarProdutoComponent } from './components/views/produto/listar-produto/listar-produto.component';
 import { ListarVendaComponent } from './components/views/venda/listar-venda/listar-venda.component';
 import { CadastrarFormaPagamentoComponent } from './components/views/formaPagamento/cadastrar-forma-pagamento/cadastrar-forma-pagamento.component';
+import { ListarFormaPagamentoComponent } from './components/views/formaPagamento/listar-forma-pagamento/listar-forma-pagamento.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,7 @@ import { CadastrarFormaPagamentoComponent } from './components/views/formaPagame
     CadastrarCategoriaComponent, 
     CadastrarProdutoComponent, 
     ListarProdutoComponent, 
-    ListarVendaComponent, CadastrarFormaPagamentoComponent, 
+    ListarVendaComponent, CadastrarFormaPagamentoComponent, ListarFormaPagamentoComponent, 
   ],
   imports: [
     BrowserModule,
