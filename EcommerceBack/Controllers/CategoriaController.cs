@@ -2,7 +2,7 @@ using System.Linq;
 using EcommerceBack.Data;
 using EcommerceBack.Models;
 using Microsoft.AspNetCore.Mvc;
-
+/*
 namespace EcommerceBack.Controllers
 {
     [ApiController]
@@ -25,4 +25,4 @@ namespace EcommerceBack.Controllers
         [Route("listar")]
         public IActionResult List() => Ok(_context.Categorias.ToList());
     }
-}
+} */

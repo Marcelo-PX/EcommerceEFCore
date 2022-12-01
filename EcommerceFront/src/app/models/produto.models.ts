@@ -7,6 +7,6 @@ export interface Produto {
     quantidade: number;
     valor: number;
     criadoEm?: string;
-    categoriaId: number;
-    categoria?: Categoria;
+    // categoriaId: number;
+    // categoria?: Categoria;
 }

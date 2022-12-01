@@ -4,7 +4,7 @@ using EcommerceBack.Data;
 using EcommerceBack.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-
+/*
 namespace API.Controllers
 {
     [ApiController]
@@ -39,4 +39,4 @@ namespace API.Controllers
                 .ToList());
         }
     }
-}
+} */

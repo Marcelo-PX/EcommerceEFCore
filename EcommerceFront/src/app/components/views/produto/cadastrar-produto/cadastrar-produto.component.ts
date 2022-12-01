@@ -42,7 +42,7 @@ export class CadastrarProdutoComponent implements OnInit {
       valor: this.valor,
       quantidade: this.quantidade,
       descricao: this.descricao,
-      categoriaId: this.categoriaId,
+      // categoriaId: this.categoriaId,
     };
     console.log(produto)
 

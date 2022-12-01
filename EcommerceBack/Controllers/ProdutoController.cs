@@ -17,7 +17,7 @@ namespace ProdutoController
         [Route("cadastrar")]
         public IActionResult Create([FromBody] Produto produto)
         {
-            produto.Categoria = _context.Categorias.Find(produto.CategoriaId);
+            // produto.Categoria = _context.Categorias.Find(produto.CategoriaId);
             _context.Produtos.Add(produto);
             _context.SaveChanges();
             
@@ -27,7 +27,8 @@ namespace ProdutoController
         [HttpGet]
         [Route("listar")]
         public IActionResult List() => 
-            Ok(_context.Produtos.Include(p => p.Categoria).ToList());
+            // Ok(_context.Produtos.Include(p => p.Produtos).ToList());
+            Ok(_context.Produtos.ToList());
 
         [HttpGet]
         [Route("buscar/{id}")]

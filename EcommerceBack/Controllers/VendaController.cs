@@ -22,7 +22,7 @@ namespace API.Controllers
                 .Include(x => x.FormaPagamento)
                 .Include(x => x.Itens)
                 .ThenInclude(x => x.Produto)
-                .ThenInclude(x => x.Categoria)
+                // .ThenInclude(x => x.Categoria)
                 .AsNoTracking().ToList());
         }
 
