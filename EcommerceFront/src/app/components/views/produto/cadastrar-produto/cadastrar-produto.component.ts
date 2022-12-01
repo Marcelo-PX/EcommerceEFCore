@@ -14,7 +14,7 @@ export class CadastrarProdutoComponent implements OnInit {
   nome!: string;
   descricao!: string;
   quantidade!: number;
-  preco!: number;
+  valor!: number;
   categorias!: Categoria[];
   categoriaId!: number;
 
@@ -37,15 +37,15 @@ export class CadastrarProdutoComponent implements OnInit {
   cadastrar(): void {
     let produto: Produto = {
       nome: this.nome,
-      descricao: this.descricao,
-      preco: this.preco,
+      valor: this.valor,
       quantidade: this.quantidade,
+      descricao: this.descricao,
       categoriaId: this.categoriaId,
     };
 
     this.http.post<Produto>("https://localhost:5001/api/produto/cadastrar", produto)
       .subscribe({
-        next: (categoria) => {
+        next: (produto) => {
           this._snackBar.open("Produto cadastrado!", "Ok!", {
             horizontalPosition: "right",
             verticalPosition: "top",
@@ -53,7 +53,10 @@ export class CadastrarProdutoComponent implements OnInit {
           this.router.navigate(["views/produto/listar"]);
         },
         error: (error) => {
-          console.error("Algum erro aconteceu!");
+          this._snackBar.open("Erro ao cadastrar produto!", "Ok!", {
+            horizontalPosition: "right",
+            verticalPosition: "top",
+          });
         },
       });
   }

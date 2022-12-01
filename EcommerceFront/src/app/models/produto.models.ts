@@ -5,7 +5,7 @@ export interface Produto {
     nome?: string;
     descricao?: string;
     quantidade?: number;
-    preco?: number;
+    valor?: number;
     criadoEm?: string;
     categoriaId?: number;
     categoria?: Categoria;
